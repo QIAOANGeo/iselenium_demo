@@ -30,7 +30,7 @@ class ISelenium(unittest.TestCase):
             using_headless = os.environ['using_headless']
         except KeyError:
             using_headless = None
-            print('没有配置环境变量using_headless，按照有界面方式运行自动化测试')
+            print('没有配置环境变量using_headless，按照有界面的方式运行自动化测试')
 
         chrome_options = Options()
         if using_headless is not None and using_headless.lower() == 'true':
